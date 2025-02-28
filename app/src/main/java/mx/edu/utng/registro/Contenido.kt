@@ -63,6 +63,12 @@ class Contenido : AppCompatActivity() {
             val intento = Intent(this, Dia::class.java)
             startActivity(intento)
         }
+
+        val btnInicio = findViewById<Button>(R.id.btnInicioReg)
+        btnInicio.setOnClickListener {
+            val intento = Intent(this, MainActivity::class.java)
+            startActivity(intento)
+        }
     }
 
     override fun onResume() {
@@ -81,4 +87,5 @@ class Contenido : AppCompatActivity() {
         val listaFiltrada = todasLasEntradas.filter { it.titulo.contains(texto, ignoreCase = true) }
         diarioAdapter.actualizarLista(listaFiltrada)
     }
+
 }

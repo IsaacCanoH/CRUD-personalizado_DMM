@@ -11,7 +11,7 @@
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bonit"
+        android:src="@drawable/silv"
         android:scaleType="fitXY"
         android:layout_gravity="center"
         android:elevation="0dp" />
@@ -28,7 +28,6 @@
             android:background="#0c5145"/>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Barra de búsqueda -->
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
@@ -37,19 +36,35 @@
         android:background="#bdcac5"
         android:queryHint="Buscar entradas..." />
 
-    <!-- Botón Agregar -->
-    <Button
-        android:id="@+id/btnAgregar"
-        android:layout_width="150dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar"
-        android:backgroundTint="#2e7167"
-        android:textStyle="bold"
-        android:layout_marginTop="130dp"
-        android:layout_gravity="end"
-        android:layout_marginEnd="20dp"/>
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
 
-    <!-- Texto "Mi historia" -->
+        <Button
+            android:id="@+id/btnInicioReg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ir al Inicio"
+            android:backgroundTint="#2e7167"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Agregar"
+            android:backgroundTint="#2e7167"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

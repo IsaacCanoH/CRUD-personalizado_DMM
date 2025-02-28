@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itmAcerca"
+        android:title="A cerca de..."
+        />
+    <item
+        android:title="Más Informacion">
+        <menu>
+            <item
+                android:id="@+id/itemRef"
+                android:title="Referencias"/>
+            <item
+                android:id="@+id/itemReg"
+                android:title="Registro"/>
+        </menu>
+    </item>
+</menu>

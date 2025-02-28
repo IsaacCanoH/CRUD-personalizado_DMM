@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0c5145"
+    tools:context=".Dia">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tranqui"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:elevation="0dp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0c5145"
+            app:title="Sobre Mi"
+            app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:backgroundTint="#2e7167"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo estuvo mi día?"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#c8e8e3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="230dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border_background"
+        android:backgroundTint="#b1f4d6"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/edTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contenido"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado de Ánimo"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spEstadoAnimo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/edActividadDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Actividad del día"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edReflexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reflexión"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPublicar"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2e7167"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"/>
+
+</FrameLayout>

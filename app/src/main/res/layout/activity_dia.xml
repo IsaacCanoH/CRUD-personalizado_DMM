@@ -110,8 +110,7 @@
             android:layout_height="50dp"
             android:padding="10dp"
             android:layout_marginTop="5dp"
-            android:backgroundTint="@color/black"
-            android:theme="@style/SpinnerTextStyle"/>
+            android:backgroundTint="@color/black"/>
 
 
 
